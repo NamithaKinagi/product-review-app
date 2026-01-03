@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 function ProductReviewStats({ review }) {
   // Calculate Ratings Average
   let average =
@@ -11,10 +11,10 @@ function ProductReviewStats({ review }) {
       ProductReviewStats
       <h4>{review.length} Product Reviews</h4>
       <h4>Average Product Rating: {isNaN(average) ? 0 : average}</h4>
-     </div>
+    </div>
   );
 }
 ProductReviewStats.propTypes = {
-  review: PropTypes.array.isRequired
+  review: PropTypes.array.isRequired,
 };
 export default ProductReviewStats;
